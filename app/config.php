@@ -9,7 +9,7 @@
 //https://ecpro-peru.netlify.app/
 //http://localhost/housechekers
 
-define("SERVIDOR", "https://ecpro-peru.netlify.app/");
+define("SERVIDOR", "http://localhost/ecpro/");
 define("RUTA_NOSOTROS", SERVIDOR."nosotros");
 define("RUTA_CLASES", SERVIDOR."clases-libres");
 
