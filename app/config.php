@@ -9,7 +9,7 @@
 //https://ecpro-peru.netlify.app/
 //http://localhost/housechekers
 
-define("SERVIDOR", "https://luminous-biscuit-3a1599.netlify.app/");
+define("SERVIDOR", "https://ecpro-php-production.up.railway.app/");
 define("RUTA_NOSOTROS", SERVIDOR."nosotros");
 define("RUTA_CLASES", SERVIDOR."clases-libres");
 
