@@ -1,0 +1,129 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+@font-face {
+	font-family: 'Gilroy Bold';
+	src: url('../fonts/Gilroy-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Gilroy Regular';
+	src: url('../fonts/Gilroy-Regular.ttf');
+}
+
+:root {
+	--bg-gris: #e4e4e4;
+	--bg-green: #22aaa1;
+	--bg-blue: #003587;
+	--bg-black: #000000;
+	--family-GB: 'Gilroy Bold', sans-serif;
+	--family-GR: 'Gilroy Regular', sans-serif;
+	--max-width: 1200px;
+	--box-shadow: 0px 2px 20px 10px rgb(155 153 153 / 50%);
+}
+
+.container {
+	max-width: var(--max-width);
+	margin: 0 auto;
+	width: 90%;
+}
+
+/* Nuestra Propuesta */
+.propuesta {
+	background: var(--bg-gris);
+}
+.propuesta__container {
+	padding: 170px 30px 290px;
+	max-width: var(--max-width);
+	margin: auto;
+	/* outline: 3px dotted red; */
+}
+.propuesta__descriptions {
+	display: grid;
+	align-items: center;
+	gap: 2em;
+	& h3 {
+		font-size: 2.7rem;
+		font-family: var(--family-GB);
+	}
+	& p {
+		font-size: 1rem;
+		font-family: var(--family-GR);
+		text-align: justify;
+	}
+}
+.propuesta__container__img {
+	display: grid;
+}
+.propuesta__ico {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.propuesta__ico2 {
+	display: grid;
+	grid-auto-flow: column;
+	align-items: center;
+}
+
+.propuesta__img {
+	& img {
+		width: 100%;
+	}
+}
+
+/* Seccion trasmormamos */
+.transformamos {
+	background: var(--bg-gris);
+}
+.transformamos__container {
+	padding: 250px 30px 240px;
+	max-width: var(--max-width);
+	margin: auto;
+	& h2 {
+		font-family: var(--family-GB);
+		font-size: 2.5rem;
+		padding-bottom: 100px;
+		text-align: center;
+	}
+}
+.transformamos__article {
+	display: grid;
+	gap: 2.5em;
+}
+.transformamos__item {
+	text-align: center;
+	display: grid;
+	gap: 1.5em;
+	& h3 {
+		font-family: var(--family-GB);
+		font-size: 2rem;
+	}
+	& p {
+		font-family: var(--family-GR);
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.propuesta__container__img {
+		grid-auto-flow: column;
+	}
+	.propuesta__descriptions {
+		grid-auto-flow: column;
+	}
+
+	.transformamos__article {
+		grid-auto-flow: column;
+	}
+	.transformamos__item {
+		text-align: unset;
+	}
+	.transformamos__container {
+		padding: 250px 0px 240px;
+	}
+}
