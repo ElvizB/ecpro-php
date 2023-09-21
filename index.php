@@ -12,7 +12,7 @@ $partes_ruta = explode('/', $ruta);
 $partes_ruta = array_filter($partes_ruta);
 $partes_ruta = array_slice($partes_ruta, 0);
 
-$ruta_elegida = 'views/home.php';
+$ruta_elegida = 'views/404.php';
 
 if($partes_ruta[0] == 'ecpro-php-production.up.railway.app'){
   if (count($partes_ruta) == 1){
