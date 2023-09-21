@@ -6,10 +6,10 @@
 //define('NOMBRE_BD', 'andean');
 
 //rutas de la web
-//https://houseckeers.herokuapp.com/
+//https://ecpro-peru.netlify.app/
 //http://localhost/housechekers
 
-define("SERVIDOR", "http://localhost/ecpro/");
+define("SERVIDOR", "https://ecpro-peru.netlify.app/");
 define("RUTA_NOSOTROS", SERVIDOR."nosotros");
 define("RUTA_CLASES", SERVIDOR."clases-libres");
 

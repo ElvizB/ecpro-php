@@ -14,7 +14,7 @@ $partes_ruta = array_slice($partes_ruta, 0);
 
 $ruta_elegida = 'views/404.php';
 
-if($partes_ruta[0] == 'ecpro'){
+if($partes_ruta[0] == 'ecpro-peru.netlify.app'){
   if (count($partes_ruta) == 1){
     $ruta_elegida = 'views/home.php';
   }else if (count($partes_ruta) == 2){
